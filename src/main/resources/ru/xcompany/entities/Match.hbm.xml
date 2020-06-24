@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+
+    <class name="ru.xcompany.entities.Match" table="games">
+        <id name="game_id" column="game_id">
+            <generator class="sequence"/>
+        </id>
+        <property name="home_team" column="home_team"/>
+        <property name="home_goal" column="home_goal"/>
+        <property name="guest_team" column="guest_team"/>
+        <property name="guest_goal" column="guest_goal"/>
+    </class>
+</hibernate-mapping>
