@@ -19,16 +19,12 @@
         <%
             out.println(
                     "\t\t<table border=\"2\" frame=\"border\" rules=\"all\" cellspacing=\"1\" cellpadding=\"2\" summary=\"Турнирная таблица АПЛ\">\n" +
-//                            "\t\t\t<caption>Турнирная таблица АПЛ</caption>\n" +
+                            "\t\t\t<caption>Турнирная таблица АПЛ</caption>\n" +
                             "\t\t\t<col width=\"2%\">\n" +
-                            "\t\t\t<col width=\"21%\">\n" +
-                            "\t\t\t<col span=\"7\" width=\"5%\" bgcolor=\"#add8e6\">\n" +
-                            "\t\t\t<colgroup width=\"3%\">\n" +
-                            "\t\t\t\t<col span=\"7\">\n" +
-                            "\t\t\t\t<col span=\"7\" bgcolor=\"#add8e6\">\n" +
-                            "\t\t\t</colgroup>\n" +
+                            "\t\t\t<col width=\"26%\">\n" +
+                            "\t\t\t<col span=\"8\" width=\"9%\" bgcolor=\"#add8e6\">\n" +
                             "\t\t\t<tr>\n" +
-                            "\t\t\t\t<th>место</th><th>команда</th><th>очки</th><th>победы</th><th>ничьи</th><th>поражения</th><th>голы забитые</th><th>голы пропущенные</th><th>разница голов</th>\t\t\t\n" +
+                            "\t\t\t\t<th>место</th><th>команда</th><th>матчи</th><th>очки</th><th>победы</th><th>ничьи</th><th>поражения</th><th>голы забитые</th><th>голы пропущенные</th><th>разница голов</th>\t\t\t\n" +
                             "\t\t\t</tr>"
             );
 
@@ -40,16 +36,17 @@
                 pos++;
                 out.println(
                         "\t\t\t<tr>\n" +
-                                "\t\t\t\t<td>" + pos + "</td>\n" +
-                                "\t\t\t\t<td>" + s[0] + "</td>\n" +
-                                "\t\t\t\t<td>" + s[1] + "</td>\n" +
-                                "\t\t\t\t<td>" + s[2] + "</td>\n" +
-                                "\t\t\t\t<td>" + s[3] + "</td>\n" +
-                                "\t\t\t\t<td>" + s[4] + "</td>\n" +
-                                "\t\t\t\t<td>" + s[5] + "</td>\n" +
-                                "\t\t\t\t<td>" + s[6] + "</td>\n" +
-                                "\t\t\t\t<td>" + s[7] + "</td>\t\n" +
-                                "\t\t\t</tr>"
+                        "\t\t\t\t<td>" + pos + "</td>\n" +
+                        "\t\t\t\t<td>" + s[0] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[1] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[2] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[3] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[4] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[5] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[6] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[7] + "</td>\n" +
+                        "\t\t\t\t<td>" + s[8] + "</td>\n" +
+                        "\t\t\t</tr>"
                 );
             }
             out.println("\t\t</table>");

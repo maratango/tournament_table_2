@@ -75,13 +75,14 @@ public class MatchHibernateDAO implements DAO<Match, Integer> {
 
             turnTable.forEach(p -> System.out.println(
                     "team: "+p[0]+
-                    " point: "+p[1]+
-                    " win: "+p[2]+
-                    " draw: "+p[3]+
-                    " lose: "+p[4]+
-                    " gs: "+p[5]+
-                    " gc: "+p[6]+
-                    " gd: "+p[7]));
+                    " games: "+p[1]+
+                    " point: "+p[2]+
+                    " win: "+p[3]+
+                    " draw: "+p[4]+
+                    " lose: "+p[5]+
+                    " gs: "+p[6]+
+                    " gc: "+p[7]+
+                    " gd: "+p[8]));
 
             return turnTable;
         }

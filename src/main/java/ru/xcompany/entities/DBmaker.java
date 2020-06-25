@@ -1,3 +1,5 @@
+// не используется, создан для тестовых целей
+
 package ru.xcompany.entities;
 
 import org.hibernate.SessionFactory;
