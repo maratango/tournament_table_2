@@ -23,6 +23,7 @@ public class MatchHibernateDAO implements DAO<Match, Integer> {
 
             session.save(match);
 
+            //длы вывода в консоль переменных объекта
             System.out.println(match.getHome_team());
             System.out.println(match.getHome_goal());
             System.out.println(match.getGuest_team());
@@ -73,6 +74,7 @@ public class MatchHibernateDAO implements DAO<Match, Integer> {
 
             List<Object[]> turnTable = session.createSQLQuery("select * from turnTable").list();
 
+            //для вывода в консоль полученного результата
             turnTable.forEach(p -> System.out.println(
                     "team: "+p[0]+
                     " games: "+p[1]+

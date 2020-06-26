@@ -14,12 +14,12 @@ CREATE SEQUENCE HIBERNATE_SEQUENCE START WITH 1 INCREMENT BY 1 NOCACHE NOCYCLE;
 CREATE OR REPLACE VIEW turnTable AS
 with
 teams as
-    (select team, sum(count) as count from
-        (select home_team as team, count(*) as count
+    (select team from
+        (select home_team as team
         from games
         group by home_team
         union all
-        select guest_team as team, count(*) as count
+        select guest_team as team
         from games
         group by guest_team)
     group by team),
@@ -81,7 +81,6 @@ goals_conceded as
     group by team)
 select
     t.team,
-    t.count as games,
     (NVL(w.count, 0) * 3 + NVL(d.count, 0)) as point,
     NVL(w.count,0) as win,
     NVL(d.count,0) as draw,

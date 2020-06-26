@@ -18,6 +18,7 @@ public class fileReader {
         //создаём Сканер, указываем путь до файла чтения
         File file = new File("C:/TestProjects/tournament_table_2/src/main/resources/uploads/" + filename);
         Scanner sc = new Scanner(file);
+        //выводим в консоль получившийся путь к файлу
         System.out.println("путь к файлу:" + file);
 
         //подготовка к связи с бд

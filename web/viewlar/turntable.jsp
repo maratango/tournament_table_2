@@ -19,7 +19,6 @@
         <%
             out.println(
                     "\t\t<table border=\"2\" frame=\"border\" rules=\"all\" cellspacing=\"1\" cellpadding=\"2\" summary=\"Турнирная таблица АПЛ\">\n" +
-                            "\t\t\t<caption>Турнирная таблица АПЛ</caption>\n" +
                             "\t\t\t<col width=\"2%\">\n" +
                             "\t\t\t<col width=\"26%\">\n" +
                             "\t\t\t<col span=\"8\" width=\"9%\" bgcolor=\"#add8e6\">\n" +
